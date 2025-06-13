@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Idensive Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nav-logo">Idensive Studio</div>
+            <div class="nav-bar">
+                <ul id="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li id="signin-link"><a href="signin.html">SIGNIN</a></li>
+                    <li id="signup-link"><a href="signup.html">SIGNUP</a></li>
+                    <li id="logout-link" style="display: none;"><a href="#" onclick="logoutUser()">LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <h2>Login to your Account</h2>
+            <p>Enter your credentials to access your dashboard.</p>
+            <form class="contact-form" id="signin-form">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Your password" required>
+
+                <label><input type="checkbox"> Remember me</label>
+                <br><br>
+
+                <div class="input-submit">
+                    <button type="submit">Sign In</button>
+                </div>
+            </form>
+            <p style="text-align: center; margin-top: 20px;">Don't have an account? <a href="signup.html" style="color:#00ff00;">Sign up</a></p>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
