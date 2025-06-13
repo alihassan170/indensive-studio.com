@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Idensive Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nav-logo">Idensive Studio</div>
+            <div class="nav-bar">
+                <ul id="nav-links">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li id="signin-link"><a href="signin.html">SIGNIN</a></li>
+                    <li id="signup-link"><a href="signup.html">SIGNUP</a></li>
+                    <li id="logout-link" style="display: none;"><a href="#" onclick="logoutUser()">LOGOUT</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <h2>Create Your Account</h2>
+            <p>Fill in the form below to sign up.</p>
+            <form class="contact-form" id="signup-form">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="Your email" required>
+
+                <label for="mobile">Mobile Number</label>
+                <input type="number" name="mobile" id="mobile" placeholder="Your phone number" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Choose a password" required>
+
+                <div class="input-submit">
+                    <button type="submit">Sign up</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
